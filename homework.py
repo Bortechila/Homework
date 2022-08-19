@@ -10,7 +10,7 @@ def pose_callback(msg: Pose):
     cmd.linear.x = 1.0
     cmd.angular.z = 1.0
     message_1 = msg
-    print(message_1.x, "\n\n", message_1.y)
+    print(message_1.x, "\n", message_1.y, "\n\n")
     pub.publish(cmd)
 
 if __name__ == "__main__":
